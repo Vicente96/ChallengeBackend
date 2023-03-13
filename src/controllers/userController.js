@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const saltRounds = 10;
 const jwt = require("jsonwebtoken");
 const {verifyToken,secretkey} = require ("../services/tokenService");
-
+//login
 const getLogin = async (req, res) => {
   try {
     const user = await userModel.findOne({
