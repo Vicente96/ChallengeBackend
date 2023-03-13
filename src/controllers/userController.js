@@ -62,7 +62,7 @@ const getOneUser = async (req, res) => {
   
   const createNewUser = async (req, res) => {
     const data = req.body;
-    console.log("qwerty");
+    console.log(data);
     const hash = await bcrypt.hash(data.password, saltRounds);
     verifyToken(req, res, async () => {
       try {
